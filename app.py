@@ -15,4 +15,5 @@ st.write("You selected", len(hobbies), 'options')
 
 
 if st.button('Submit'):
+    webbrowser.open("https://www.marca.com")
     st.success("Successful operation!!!!!")
