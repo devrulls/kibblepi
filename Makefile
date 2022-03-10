@@ -12,10 +12,7 @@ clean:
 
 .PHONY: test
 test:
-	python -m isort app
-	python -m black app
-	python -m isort tests
-	python -m black tests
-	python -m mypy --config-file=./mypy.ini app
-	python -m mypy --config-file=./mypy.ini tests
-	python -u -m pytest tests -vv
+	python -m isort pi_server
+	python -m black pi_server
+	python -m mypy pi_server
+	python -u -m pytest -vv
