@@ -1,76 +1,54 @@
-# kibblepi
+# Kibblepi - Developed at SolipsIA
 
-This project is ...
-Internship project ...
+This is an internship project developed at SolipsIA to validate the competences acquired in the professional title "Concepteur Développeur d’applications" at the GRETA Littoral - Montpellier.
+This project consists in the creation of a cat kibble distributor, called "Kibblepi", this distributor will allow you to feed your pet whenever you want, 
+through a web application developed with the Streamlit framework and server side developed with the micro-framework flask. 
+(Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries)
 
-It is splited in several part...
-Architecture schema...
 
-## Raspberry server
+## Technologies:
+- [Streamlit](https://streamlit.io/)
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+
+### Prerequisites
+
+| WEB-SERVER | WEB-APP |
+| ------ | ------------- |
+    |Python 3.7.3 | Python 3.10.2  |
+    |Flask | Streamlit |
+    |Raspberry Pi OS Buster| - |
+    |VNC Viewer| - |
+    |Arduino Software| - |
+
+
+## Streamlit Web–App
+- Python V3.10.2 [Download](https://www.python.org/downloads/)
+
+## Raspberry server Web–Server
+ 
+- RaspberryPi OS Buster [Download](https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/)
+- Python V-3.7.3 [Download](https://www.python.org/downloads/release/python-373/)
+- VNC Viewer [Download](https://www.realvnc.com/en/connect/download/viewer/)
+- Arduino-Software [Download](https://www.arduino.cc/en/software)
+
+
+ 
+Hardware :
+
+- Raspberry Pi-3 Model B
+- Adafruit 16-Channel PWM / Servo HAT for Raspberry PI
+- Accessory kit-Arduino
 
 ### Setup env
-Install pyenv, python 3.10.2 and pyenv virtualenv.
-Then create a venv:
-```
-pyenv virtualenv venv_kibblepi
-pyenv activate venv_kibblepi
-pip install -e pi_server/.[dev]
-```
-Run the test with:
-```
-make test
-```
-Launch the server
-```
-run_server
-```
 
-## Streamlit webapp
+## Deployment
 
-## TODO
+This application is deployed on heroku : https://id.heroku.com/login
 
+        link webapp:
 
-# Some example of md template:
+## Authors
 
-# *[short title of solved problem and solution]*
+* **HERNANDEZ Raul** - *Initial work* - [Devrulls]( https://github.com/devrulls)
 
-**User Story:** *[ticket/issue-number]* <!-- optional -->
-
-*[context and problem statement]*
-*[decision drivers | forces]* <!-- optional -->
-
-## Considered Alternatives
-
-* *[alternative 1]*
-* *[alternative 2]*
-* *[alternative 3]*
-* *[...]* <!-- numbers of alternatives can vary -->
-
-## Decision Outcome
-
-* Chosen Alternative: *[alternative 1]*
-* *[justification. e.g., only alternative, which meets KO criterion decision driver | which resolves force force | ... | comes out best (see below)]*
-* *[consequences. e.g., negative impact on quality attribute, follow-up decisions required, ...]* <!-- optional -->
-
-## Pros and Cons of the Alternatives <!-- optional -->
-
-### *[alternative 1]*
-
-* `+` *[argument 1 pro]*
-* `+` *[argument 2 pro]*
-* `-` *[argument 1 con]*
-* *[...]* <!-- numbers of pros and cons can vary -->
-
-### *[alternative 2]*
-
-* `+` *[argument 1 pro]*
-* `+` *[argument 2 pro]*
-* `-` *[argument 1 con]*
-* *[...]* <!-- numbers of pros and cons can vary -->
-
-### *[alternative 3]*
-
-* `+` *[argument 1 pro]*
-* `+` *[argument 2 pro]*
-* `-` *[argument 1 con]*
-* *[...]* <!-- numbers of pros and cons can vary -->
+* **ROCHETTE Samuel** - *Initial work* -[Saxamos]( https://github.com/Saxamos)
