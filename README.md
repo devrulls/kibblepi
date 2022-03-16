@@ -1,6 +1,6 @@
 # Kibblepi - Developed at SolipsIA
 
-This is an internship project developed at SolipsIA to validate the competences acquired in the professional title "Concepteur Développeur d’applications" at the GRETA Littoral - Montpellier.
+This is an internship project developed at SolipsIA to validate the skills acquired in the professional title "Concepteur Développeur d’applications" at the GRETA Littoral - Montpellier.
 This project consists in the creation of a cat kibble distributor, called "Kibblepi", this distributor will allow you to feed your pet whenever you want, 
 through a web application developed with the Streamlit framework and server side developed with the micro-framework flask. 
 (Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries)
@@ -31,8 +31,6 @@ through a web application developed with the Streamlit framework and server side
 - VNC Viewer [Download](https://www.realvnc.com/en/connect/download/viewer/)
 - Arduino-Software [Download](https://www.arduino.cc/en/software)
 
-
- 
 Hardware :
 
 - Raspberry Pi-3 Model B
@@ -40,15 +38,17 @@ Hardware :
 - Accessory kit-Arduino
 
 ### Setup env
+- pip install pipenv
+- pipenv install flask RPi.PIO picamera
+- pipenv  --venv                          	// Location of virtual environment
+- pipenv shell        // to activate this project’s virtualenv
 
-## Deployment
 
-This application is deployed on heroku : https://id.heroku.com/login
+## Deploying The App
++ Heroku [WebApp](https://kibblepi.herokuapp.com/)
 
-        link webapp:
+This app is deployed on heroku and is connected to your github repository with the main branch. 
+Heroku allows you to control the branches of your developing apps by allowing you to configure your github pushes to automatically build and deploy to that app.
 
-## Authors
+        
 
-* **HERNANDEZ Raul** - *Initial work* - [Devrulls]( https://github.com/devrulls)
-
-* **ROCHETTE Samuel** - *Initial work* -[Saxamos]( https://github.com/Saxamos)
