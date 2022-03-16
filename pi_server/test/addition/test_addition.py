@@ -1,4 +1,4 @@
-from app.addition.addition import add
+from app import add
 
 
 class TestAddition:
