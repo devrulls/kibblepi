@@ -1,3 +1,5 @@
+import webbrowser
+
 import streamlit as st
 
 st.title("Welcome to Cat Kibble Box -CKB")
@@ -9,7 +11,7 @@ st.write("Your Kibble-box  is: ", hobby)
 
 options = st.multiselect("Options available: ", ["Camera", "Email", "Eat"])
 
-st.write("You selected", len(hobbies), "options")
+st.write("You selected", len(hobby), "options")
 
 
 if st.button("Submit"):

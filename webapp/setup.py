@@ -4,7 +4,7 @@ setup(
     name="pi_server",
     version="0.1.0",
     packages=find_packages(exclude=["tests"]),
-    install_requires=["streamlit"],
+    install_requires="streamlit==1.7.0",
     extras_require={"dev": ["pytest", "mypy", "black", "isort"]},
     entry_points={
         "console_scripts": [

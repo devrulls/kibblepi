@@ -12,13 +12,13 @@ through a web application developed with the Streamlit framework and server side
 
 ### Prerequisites
 
-| WEB-SERVER | WEB-APP |
-| ------ | ------------- |
-    |Python 3.7.3 | Python 3.10.2  |
-    |Flask | Streamlit |
-    |Raspberry Pi OS Buster| - |
-    |VNC Viewer| - |
-    |Arduino Software| - |
+| WEB-SERVER             | WEB-APP       |
+|------------------------|---------------|
+| Python 3.7.3           | Python 3.10.2 |
+| Flask                  | Streamlit     |
+| Raspberry Pi OS Buster | -             |
+| VNC Viewer             | -             |
+| Arduino Software       | -             |
 
 
 ## Streamlit Web–App
@@ -38,11 +38,12 @@ Hardware :
 - Accessory kit-Arduino
 
 ### Setup env
-- pip install pipenv
-- pipenv install flask RPi.PIO picamera
-- pipenv  --venv                          	// Location of virtual environment
-- pipenv shell        // to activate this project’s virtualenv
-
+```commandline
+pip install pipenv
+pipenv install -r path/to/requirements.txt
+pipenv --venv path/to/venv
+pipenv shell  # to activate this project’s virtualenv
+```
 
 ## Deploying The App
 + Heroku [WebApp](https://kibblepi.herokuapp.com/)
