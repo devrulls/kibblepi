@@ -59,23 +59,3 @@ st.write(
     unsafe_allow_html=True,
 )
 
-st.write(
-    f"""
-    <a target="_self" href="http://devrulls.ddns.net:8080/led/17/state/1">
-        <button>
-            LED 17 ON
-        </button>
-    </a>
-    """,
-    unsafe_allow_html=True,
-)
-st.write(
-    f"""
-    <a target="_self" href="http://devrulls.ddns.net:8080/led/17/state/0">
-        <button>
-            LED 17 OFF
-        </button>
-    </a>
-    """,
-    unsafe_allow_html=True,
-)
