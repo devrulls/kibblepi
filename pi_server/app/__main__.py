@@ -1,5 +1,5 @@
 from app import app
-
+from flask import redirect
 import yagmail
 import RPi.GPIO as GPIO
 import time
@@ -40,8 +40,7 @@ def send_email():
              contents="Hello from Raspberry Pi"
              )
 
-
-print("Email sent - Cool")
+    return 'Email sent from test.devrulls@gmail.com!!!'
 
 
 @app.route("/push-button")
@@ -97,6 +96,7 @@ def servo():
     # Close GPIO & cleanup
     pwm.stop()
     GPIO.cleanup()
+    return redirect("https://kibblepi.herokuapp.com", code=302)
 
 
 app.run(host="0.0.0.0", port=8080)
