@@ -1,0 +1,10 @@
+[Unit]
+Description= Kibblepi - Web server - automatic start
+After=multi-use.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/Documents/python_raspberry/web_server_flask_1.py
+User=pi
+
+[Install]
+WantedBy=multi-user.target

@@ -37,6 +37,10 @@ Hardware :
 - Adafruit 16-Channel PWM / Servo HAT for Raspberry PI
 - Accessory kit-Arduino
 
+### Automatically start the server on the raspberrypi
+
++ sudo systemctl enable kibblepi_start_server.service
+
 ### Setup env
 ```commandline
 pip install pipenv
