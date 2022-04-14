@@ -24,27 +24,7 @@ st.write(
 )
 st.write(
     f"""
-    <a target="_self" href="http://devrulls.ddns.net:8080/send-email">
-        <button>
-            Send Email
-        </button>
-    </a>
-    """,
-    unsafe_allow_html=True,
-)
-st.write(
-    f"""
-    <a target="_self" href="http://devrulls.ddns.net:8080/push-button">
-        <button>
-            Push-Button
-        </button>
-    </a>
-    """,
-    unsafe_allow_html=True,
-)
-st.write(
-    f"""
-    <a target="_self" href="http://devrulls.ddns.net:8080/servo-kibblepi">
+    <a target="_self" href="http://devrulls.ddns.net:8080/rotate-servo">
         <button>
             Servo-Motor
         </button>

@@ -8,7 +8,7 @@ setup(
     extras_require={"dev": ["pytest", "mypy", "black"]},
     entry_points={
         "console_scripts": [
-            "run_server = app.__main__:main",
+            "run_server = pi_server.__main__:main",
         ],
     },
 )
