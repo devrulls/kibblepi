@@ -1,4 +1,4 @@
-# fly.toml file generated for kibblepi on 2022-03-17T18:03:47+01:00
+# fly.toml file generated for kibblepi on 2022-03-21T23:21:23+01:00
 
 app = "kibblepi"
 
@@ -7,6 +7,7 @@ kill_timeout = 5
 processes = []
 
 [env]
+  PORT = "8080"
 
 [experimental]
   allowed_public_ports = []
@@ -37,3 +38,7 @@ processes = []
     interval = "15s"
     restart_limit = 0
     timeout = "2s"
+
+[[statics]]
+  guest_path = "/app/public"
+  url_prefix = "/static/"
