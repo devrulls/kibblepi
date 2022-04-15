@@ -1,3 +1,3 @@
 from flask import Flask
 
-app = Flask("cat_bot")
+app = Flask(__name__)

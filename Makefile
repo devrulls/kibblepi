@@ -12,7 +12,6 @@ clean:
 
 .PHONY: test
 test:
-	python -m isort pi_server
 	python -m black pi_server
 	python -m mypy pi_server
 	python -u -m pytest -vv
