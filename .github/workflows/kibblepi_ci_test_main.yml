@@ -23,11 +23,8 @@ jobs:
     - name: Kibblepi - Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install black pytest
+        pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Kibblepi - black --check .
-      run: |
-        black --check .
     - name: Kibblepi - Test with pytest
       run: |
         pytest
