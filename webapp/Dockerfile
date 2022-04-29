@@ -6,4 +6,7 @@ COPY . /home/webapp
 
 RUN pip install -e /home/webapp
 
-CMD ["streamlit", "run", "webapp/__main__.py"]
+EXPOSE 8501
+
+ENTRYPOINT ["streamlit", "run"]
+CMD ["webapp/__main__.py"]
