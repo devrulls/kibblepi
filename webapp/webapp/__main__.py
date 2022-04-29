@@ -14,7 +14,7 @@ st.write("You selected", len(options), "options")
 
 st.write(
     f"""
-    <a target="_self" href="http://devrulls.ddns.net:8080/">
+    <a target="_self" href="http://devrulls1.ddns.net:8080/">
         <button>
             RaspberryPi - Home
         </button>
@@ -24,7 +24,7 @@ st.write(
 )
 st.write(
     f"""
-    <a target="_self" href="http://devrulls.ddns.net:8080/rotate-servo">
+    <a target="_self" href="http://devrulls1.ddns.net:8080/rotate-servo">
         <button>
             Servo-Motor
         </button>
@@ -32,4 +32,3 @@ st.write(
     """,
     unsafe_allow_html=True,
 )
-
