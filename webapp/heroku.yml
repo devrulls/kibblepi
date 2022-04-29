@@ -2,4 +2,4 @@ build:
   docker:
     web: kibblepi/webapp/Dockerfile
 run:
-  web: bundle exec puma -C config/puma.rb
+  web: sh webapp/setup.sh && streamlit run webapp/app/__main__.py
