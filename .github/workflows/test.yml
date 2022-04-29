@@ -11,7 +11,20 @@ permissions:
 
 jobs:
   pi_server:
+    runs-on: ubuntu-latest
 
+    steps:
+    - uses: actions/checkout@v3
+    - name: set up python 3.7
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.7"
+    - name: install dependencies and run tests
+      run: |
+        pip install pi_server/.[dev]
+        python -u -m pytest -vv pi_server
+
+  webapp:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,5 +35,5 @@ jobs:
         python-version: "3.10"
     - name: install dependencies and run tests
       run: |
-        pip install pi_server/.[dev]
-        python -u -m pytest -vv pi_server
+        pip install webapp/.[dev]
+        python -u -m pytest -vv webapp

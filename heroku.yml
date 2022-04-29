@@ -1,5 +1,5 @@
 build:
   docker:
-    web: kibblepi/webapp/Dockerfile
+    web: webapp/Dockerfile
 run:
   web: sh webapp/setup.sh && streamlit run webapp/app/__main__.py
