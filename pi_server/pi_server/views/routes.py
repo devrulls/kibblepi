@@ -10,7 +10,7 @@ FREQUENCE = 50
 
 @app.route("/")
 def index():
-    return "Hello from Raspberry PI routes.py"
+    return "Hello from Raspberry PI routes.py files"
 
 @app.route("/push-button")
 def check_push_button_state():
