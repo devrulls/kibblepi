@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: webapp/Dockerfile
+run:
+  web: sh webapp/setup.sh && streamlit run webapp/__main__.py
